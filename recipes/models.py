@@ -21,6 +21,6 @@ class Recipe(models.Model):
 class Ingredient(models.Model):
     recipe = models.ForeignKey(Recipe, on_delete=models.CASCADE, related_name="ingredients")
     content = models.CharField(max_length=100)
-    
+
     def __str__(self):
-        return "Ingredient: "+self.content()
+        return f"ingredient: {self.pk} ({self.recipe.title})"
