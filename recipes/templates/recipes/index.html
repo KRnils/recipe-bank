@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block content %}
+<!-- index.html content starts here -->
+<div>
+    <h1>Recipe entries</h1>
+    <ul>
+        {% for recipe in recipe_list %}
+            <li>
+                {{ recipe.title }} - {{ recipe.author }}
+            </li>
+            <hr>
+            {% if forloop.counter|divisibleby:2 %}
+            {% endif %}
+        {% endfor %}
+    </ul>
+</div>
+    </div>
+    {% if is_paginated %}
+    <nav aria-label="Page navigation">
+        <ul>
+            {% if page_obj.has_previous %}
+            <li><a href="?page={{ page_obj.previous_page_number }}"> &laquo; PREV </a></li>
+            {% endif %}
+            {% if page_obj.has_next %}
+            <li><a href="?page={{ page_obj.next_page_number }}"> NEXT &raquo;</a></li>
+            {% endif %}
+        </ul>
+    </nav>
+    {% endif %}
+</div>
+    
+</body>
+</html>
+{% endblock %}
