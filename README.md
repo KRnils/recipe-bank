@@ -60,7 +60,7 @@ Through the use of the Kanban board in the projects view in Github, the project 
 
 ## Database Schema
 
-![Database Schema]()
+![Database Schema](/readme/images/Database%20ERD.png)
 
 ## Site Structure
 
