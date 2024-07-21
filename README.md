@@ -171,10 +171,9 @@ Manual tests were performed to check for user story criteria compliance.
 
 # Deployment
 
-## Deploying the project
-* If development is being done locally: Activate your virtual environment.
+## How to fork the repository
 * Make sure you have Python version 3.12.4, different version might still work, especially if the version number is close.
-* Clone the project from github to your workspace.
+* At the top of the github page, in the line with the project's name, on the right side find "Fork" and click it.
 * Install required packages by running `pip install requirements.txt`
 * These are all the packages listed:
   * asgiref==3.8.1
@@ -187,11 +186,20 @@ Manual tests were performed to check for user story criteria compliance.
   * whitenoise==6.7.0
 * You will need to set up your own database since the public data here does not include database details and credentials for security reasons. The current settings.py refers to the env.py file which stores the database information, this is not publically available and needs to be replaced to work in a fork.
 * For testing you can run with a local sqlite database.
-* Test server works locally: `python manage.py runserver`
 
 ## Deploying to Heroku
-This project uses Heroku to serve the website. To deploy on Heroku follow these steps.
-* TODO
+
+1. Go to [Heroku](https://id.heroku.com/login), create account if you don't have and log in.
+
+2. Head to your dashboard and click "New", then "Create new app"
+
+3. Next step is to give your app a name and to choose region. After that click on "Create app".
+
+4. Then head to "Deployment" tab which you can also find on top of your Heroku page and under "Deployment method" click on "GitHub"(in my case that's where my repository is).
+
+5. After that, just under the "Deployment method" section is "Connect to GitHub" section where you need to find your repository and then click on "Connect".
+
+6. Just under "Connect to GitHub" section is "Automatic deploys" section where you can click on "Enable Automatic Deploys" if that's what you want and just under is "Manual Deploy" section, where you need to click on "Deploy Manually".
 
 # Credits
 
@@ -199,5 +207,4 @@ This project uses Heroku to serve the website. To deploy on Heroku follow these 
 * [Gitpod](https://www.gitpod.io/) Provided the working environment, allowing me to work from separate computers.
 * [Lucid Charts](https://www.lucidchart.com) For ERD diagrams
 * [Laura Mayocks Project The Happy Reader](https://github.com/LauraMayock/The-happy-reader/tree/main) Provided inspiration for the structure of this readme
-* 
-* 
+* The deployment steps for Heroku is mostly copied from [Coder's Parkhouse](https://github.com/AleksandarJavorovic/coders-parkhouse) but edited for style and small differences.
