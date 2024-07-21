@@ -1,0 +1,62 @@
+[
+    {
+        "model": "recipes.recipe",
+        "pk": null,
+        "fields": {
+            "title": "Super exotic pasta sauce",
+            "slug": "Super-exotic-pasta-sauce",
+            "author": 1,
+            "text": "",
+            "created_on": "2024-07-22T13:08:50.884Z",
+            "updated_on": "2023-09-13T09:43:19.754Z"
+        }
+    },
+    {
+        "model": "recipes.recipe",
+        "pk": null,
+        "fields": {
+            "title": "The best muffins",
+            "slug": "The-best-muffins",
+            "author": 1,
+            "text": "",
+            "created_on": "2024-07-22T13:08:50.884Z",
+            "updated_on": "2023-09-13T09:43:19.754Z"
+        }
+    },
+    {
+        "model": "recipes.recipe",
+        "pk": null,
+        "fields": {
+            "title": "Fries",
+            "slug": "Fries",
+            "author": 1,
+            "text": "",
+            "created_on": "2024-07-22T13:08:50.884Z",
+            "updated_on": "2023-09-13T09:43:19.754Z"
+        }
+    },
+    {
+        "model": "recipes.recipe",
+        "pk": null,
+        "fields": {
+            "title": "Coca cola",
+            "slug": "Coca-cola",
+            "author": 1,
+            "text": "",
+            "created_on": "2024-07-22T13:08:50.884Z",
+            "updated_on": "2023-09-13T09:43:19.754Z"
+        }
+    },
+    {
+        "model": "recipes.recipe",
+        "pk": null,
+        "fields": {
+            "title": "Schnitzel",
+            "slug": "Schnitzel",
+            "author": 1,
+            "text": "",
+            "created_on": "2024-07-22T13:08:50.884Z",
+            "updated_on": "2023-09-13T09:43:19.754Z"
+        }
+    }
+]
