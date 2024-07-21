@@ -2,11 +2,26 @@
 from django.db import models
 from django.contrib.auth.models import User
 
-#Post = recipe, maybe should be called "recipe"?
-class Post(models.Model):
-    title = models.CharField(max_length=200)
+#
+class Recipe(models.Model):
+    title = models.CharField(max_length=200, unique=True)
+    slug = models.SlugField(max_length=200, unique=True)
     text = models.TextField()
-    author = models.ForeignKey(User, on_delete=models.CASCADE)
+    author = models.ForeignKey(User, on_delete=models.CASCADE, related_name="recipes")
     created_at = models.DateTimeField(auto_now_add=True)
-    ingredient1 = models.CharField(max_length=200)
-    ingredient2 = models.CharField(max_length=200)
+    updated_on = models.DateTimeField(auto_now=True)
+
+
+    class Meta():
+        ordering = ["-created_on"]
+    
+    def __str__(self):
+        return f"{self.title} | written by {self.author}"
+
+
+class Ingredient(models.Model):
+    recipe = models.ForeignKey(Recipe, on_delete=models.CASCADE, related_name="ingredients")
+    content = models.CharField(max_length=100)
+    
+    def __str__(self):
+        return "Ingredient: "+self.content()

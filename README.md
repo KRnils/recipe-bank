@@ -1,131 +1,203 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# ** **
 
-Welcome Karl Robert Nilsson,
+![Recipe Bank]
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+The Recipe Bank is a website for saving and sharing recipes in a simple format. Have all your recipes in one place to easily refer to when you go shopping.
 
-You can safely delete this README.md file or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **June 18, 2024**
+You can view the live site here - <a href="https://recipebank-f5eeb7306eea.herokuapp.com/" target="_blank"> Recipe Bank </a>
 
-## Gitpod Reminders
+# User Experience (UX)
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+## Site Aims
 
-`python3 -m http.server`
+* Allow the user to save, share and browse recipes
+* Like other user's recipes to show appreciation
+* Account registration and log in functionality
 
-A blue button should appear to click: _Make Public_,
+## Agile Methodology
 
-Another blue button should appear to click: _Open Browser_.
+The Agile Methodology was used to plan this project. This was implemented through Github and the Project Board, which can be seen here - <a href="https://github.com/users/KRnils/projects/3/views/1" target="_blank">  </a>
 
-To run a backend Python file, type `python3 app.py` if your Python file is named `app.py`, of course.
+Through the use of the Kanban board in the projects view in Github, the project was divided into a few different sections:
+* Epics
+* Todo
+* In Progress
+* Done
 
-A blue button should appear to click: _Make Public_,
+![Kanban board github]()
 
-Another blue button should appear to click: _Open Browser_.
+### User Stories
 
-By Default, Gitpod gives you superuser security privileges. Therefore, you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+* 
+* 
+* 
+* 
+* 
 
-To log into the Heroku toolbelt CLI:
+**Still in backlog for future features**
+* 
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+## Design Wireframes
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you, so do not share it. If you accidentally make it public, you can create a new one with _Regenerate API Key_.
+### Mobile
 
-### Connecting your Mongo database
+![Home Page]()
 
-- **Connect to Mongo CLI on a IDE**
-- navigate to your MongoDB Clusters Sandbox
-- click **"Connect"** button
-- select **"Connect with the MongoDB shell"**
-- select **"I have the mongo shell installed"**
-- choose **mongosh (2.0 or later)** for : **"Select your mongo shell version"**
-- choose option: **"Run your connection string in your command line"**
-- in the terminal, paste the copied code `mongo "mongodb+srv://<CLUSTER-NAME>.mongodb.net/<DBname>" --apiVersion 1 --username <USERNAME>`
-  - replace all `<angle-bracket>` keys with your own data
-- enter password _(will not echo **\*\*\*\*** on screen)_
+![Login Page]()
 
-------
+![Contact Page]()
 
-## Release History
+### Desktop
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+![Home Page]()
 
-**June 18, 2024,** Add Mongo back into template
+![Signup Page]()
 
-**June 14, 2024,** Temporarily remove Mongo until the key issue is resolved
+![Login Page]()
 
-**May 28 2024:** Fix Mongo and Links installs
+![Blog post]()
 
-**April 26 2024:** Update node version to 16
 
-**September 20 2023:** Update Python version to 3.9.17.
+## Database Schema
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+![Database Schema]()
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+## Site Structure
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+## Design Choices
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+### Color Scheme
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+![Site colour scheme]()
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+### Typography
+Font thoughts go here
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+# Features
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+## Navigation
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+* The site navigation is done through the navigation bar at the top of each page...
+* Profile button depends on login status
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+## Home Screen
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+ * The starting page
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+ ![Homepage Mobile]() image goes here
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+ * Something about the starting page
 
-------
+  ![]() image pls
+ 
+ ### Feature name
 
-## FAQ about the uptime script
+ * Feature description
+ 
+ ![]() image pls
 
-**Why have you added this script?**
+ * When an age range is chosen by the user they are brought to a page showing only the books recommended for that age group.
+ 
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+### Create a recipe
 
-**How will this affect me?**
+* Login is required before creating a recipe.
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+![Review page]() image
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+### Future Features
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+* Optional recipe image
+* More user profile details
+* Advanced search features like date based, minimum likes amount, search by ingredient
+* Shopping snapshot view, easily exported format to use as shopping list
 
-**So….?**
+# Technologies Used
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+* HTML
+* CSS
+* Python
+* Django
+* Heroku
 
-**Can I opt out?**
+## Testing
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+### W3C Validator Testing
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+__All HTML has been tested with the W3C validator and show no errors or warnings.__
 
-**Anything more?**
+- [Results for index.html])
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+__All CSS has been testeed with W3C validator (Jigsaw) and show no errors or warnings.__
 
----
+- [Results for style.css]()
 
-Happy coding!
+__All JavaScript has been testeed with [JSHint](https://jshint.com/)__
+
+Warnings found:
+* WIP
+
+see [TESTING.md](TESTING.md) for more discussion.
+
+### Accessibility Test
+
+All Lighthouse test scores reached 100 except performance which was at 99.
+
+see [TESTING.md](TESTING.md) for all details and a full list of scores and other tests performed.
+
+### Solved Bugs
+
+* 
+
+### Known Bugs
+
+* There will be bugs
+
+## Manual Testing
+
+Manual tests were performed to check for user story criteria compliance.
+
+### Tests Performed Per Page
+
+`Start page (index.html)`
+
+| Feature | Expected Outcome | Testing Performed | Pass/Fail |
+| --- | --- | --- | --- |
+| Location | Outcome | Action | Pass/Fail |
+| Location | Outcome | Action | Pass/Fail |
+| Location | Outcome | Action | Pass/Fail |
+| Location | Outcome | Action | Pass/Fail |
+
+# Deployment
+
+## Deploying the project
+* If development is being done locally: Activate your virtual environment.
+* Make sure you have Python version 3.12.4, different version might still work, especially if the version number is close.
+* Clone the project from github to your workspace.
+* Install required packages by running `pip install requirements.txt`
+* These are all the packages listed:
+  * asgiref==3.8.1
+  * dj-database-url==0.5.0
+  * Django==4.2.13
+  * django-allauth==0.63.6
+  * gunicorn==20.1.0
+  * psycopg2==2.9.9
+  * sqlparse==0.5.0
+  * whitenoise==6.7.0
+* You will need to set up your own database since the public data here does not include database details and credentials for security reasons. The current settings.py refers to the env.py file which stores the database information, this is not publically available and needs to be replaced to work in a fork.
+* For testing you can run with a local sqlite database.
+* Test server works locally: `python manage.py runserver`
+
+## Deploying to Heroku
+This project uses Heroku to serve the website. To deploy on Heroku follow these steps.
+* TODO
+
+# Credits
+
+* [Django](https://www.djangoproject.com/) Is the framework that this project is built on entirely.
+* [Gitpod](https://www.gitpod.io/) Provided the working environment, allowing me to work from separate computers.
+* [Lucid Charts](https://www.lucidchart.com) For ERD diagrams
+* [Laura Mayocks Project The Happy Reader](https://github.com/LauraMayock/The-happy-reader/tree/main) Provided inspiration for the structure of this readme
+* 
+* 
