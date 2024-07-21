@@ -17,6 +17,15 @@
             {{ recipe.text | safe }}
         </p>
     </div>
+    <div>
+        <ul>
+            {% for item in recipe.ingredients.all %}
+            <li>
+                {{ item.content }}
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
 </div>
 
 {% endblock content %}
