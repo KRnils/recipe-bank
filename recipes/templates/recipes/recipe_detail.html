@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+
+<div>
+    <div>
+        <!-- Post title goes in these h1 tags -->
+        <h1 >{{ recipe.title }}</h1>
+        <!-- Post author goes before the | the post's created date goes after -->
+        <p >{{ recipe.author }} | {{ recipe.created_on }}</p>
+    </div>
+</div>
+
+<div>
+    <div>
+        <p>
+            {{ recipe.text | safe }}
+        </p>
+    </div>
+</div>
+
+{% endblock content %}

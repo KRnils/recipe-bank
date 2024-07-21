@@ -7,7 +7,9 @@
     <ul>
         {% for recipe in recipe_list %}
             <li>
-                {{ recipe.title }} - {{ recipe.author }}
+                <a href="{% url 'recipe_detail' recipe.slug %}">
+                    {{ recipe.title }} - {{ recipe.author }}
+                </a>
             </li>
             <hr>
             {% if forloop.counter|divisibleby:2 %}
