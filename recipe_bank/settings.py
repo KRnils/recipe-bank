@@ -25,10 +25,10 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-@fy+k_z5(()*6hse_bryt051d#-0)6*9l9!k70_fb4y^p67pwn'
+#SECRET_KEY = 'django-insecure-@fy+k_z5(()*6hse_bryt051d#-0)6*9l9!k70_fb4y^p67pwn'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ["8000-krnils-recipebank-q5jrb92lnke.ws.codeinstitute-ide.net"]
 
